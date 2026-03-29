@@ -6,3 +6,15 @@ In this project, PPO is used with an MLP, taking the agent’s velocities, confi
 You can play against the target collector AI directly in your browser [Play on itch.io](https://apzmie.itch.io/target-collector-ai), on both PC and mobile devices.
 
 <img src="images/target_collector.png" alt="target_collector" width="40%">
+
+## Environment
+### Unity
+- Unity Editor: 6000.3.0f1
+- ML Agents: 4.0.2
+- Sentis: 2.5.0
+
+### Python
+- Python 3.10.12
+
+## PPO Diagram
+![dqn_diagram](images/ppo_diagram.png)
