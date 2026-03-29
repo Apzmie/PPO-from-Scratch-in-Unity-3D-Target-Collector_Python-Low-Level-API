@@ -18,3 +18,5 @@ You can play against the target collector AI directly in your browser [Play on i
 
 ## PPO Diagram
 ![dqn_diagram](images/ppo_diagram.png)
+### GAE (Generalized Advantage Estimation)
+The TD error ($\delta$) evaluates whether the action taken in the current state was good or bad, representing the basic advantage. To estimate the advantage more accurately, the next state's advantage is added to the current one recursively to include future information. This means that the advantage added to the first one incorporates the entire future information of a trajectory, which is enabled by calculating GAE backwards when implementing.
