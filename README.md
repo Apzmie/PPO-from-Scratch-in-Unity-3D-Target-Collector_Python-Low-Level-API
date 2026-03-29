@@ -1,2 +1,6 @@
 # PPO-from-Scratch-in-Unity-3D-Target-Collector (Python-Low-Level-API)
 Because directly maximizing rewards is difficult to optimize due to high variance, Proximal Policy Optimization (PPO) uses a surrogate objective function that increases the probability of good actions while decreasing it for bad ones. PPO maximizes this function with an Actor-Critic method, where the critic evaluates the state values to help the actor choose better actions through advantages that measure how much better actions are than the expectation. PPO is not only applicable to continuous action spaces by sampling actions from probability distributions, but also clips the probability ratio between the new and old policies to prevent large updates.
+
+In this project, PPO is used with an MLP, taking the agent’s velocities, configurable joint velocities, and the relative target position as inputs, with the target angular velocities for each joint as outputs. PPO is implemented in PyTorch, based on the PPO Paper [*Proximal Policy Optimization Algorithms*](https://arxiv.org/pdf/1707.06347).
+
+You can play against the target collector AI directly in your browser [Play on itch.io](https://apzmie.itch.io/target-collector-ai), on both PC and mobile devices.
