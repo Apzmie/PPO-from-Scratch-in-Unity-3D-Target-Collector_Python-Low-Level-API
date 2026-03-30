@@ -32,3 +32,5 @@ Once all transitions are collected, the parameters are updated using mini-batche
 
 ## Training Progress
 ![plot](images/plot.png)
+
+In the policy loss plot, values above 0 indicate reducing the probability of bad actions, while values below 0 indicate increasing the probability of good actions. Oscillation around zero indicates learning well, rather than the loss staying only on one side throughout training.
