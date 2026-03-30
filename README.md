@@ -26,3 +26,9 @@ The objective function has to be maximized to properly adjust action probabiliti
 
 ### Iterative Update
 Once all transitions are collected, the parameters are updated using mini-batches to adjust the gradient direction little by little, with multiple epochs to maximize learning from a limited amount of data. This iterative update does not change the policy dramatically due to clipping mechanism.
+
+### Zero Gradient
+![zero_gradient](images/zero_gradient.png)
+
+## Training Progress
+![plot](images/plot.png)
