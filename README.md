@@ -38,4 +38,6 @@ In the policy loss plot, values above 0 indicate reducing the probability of bad
 In the entropy loss plot, a decrease in value indicates increased exploration, while an increase in value indicates reduced exploration. The entropy loss should rise gradually for successful learning, indicating that the agent is increasing its confidence in its actions.
 
 ## Conclusion
-The training was completed quickly with high performance. As expected, the agent reduces the speed of one wheel or applies counter-force to it when rotating. The real challenge is to make the agent walk with legs instead of wheels. Despite several attempts using both Configurable Joint and Articulation Body, it did not progress well as expected. 
+The training was completed quickly with high performance. As expected, the agent reduces the speed of one wheel or applies counter-force to it when rotating.
+
+The real challenge is to make the agent walk with legs instead of wheels. Despite several attempts using both Configurable Joint and Articulation Body, it did not progress well as expected. The Articulation Body version showed almost no movement during deterministic actions. The Configurable Joint version was able to move forward with knee-less legs during deterministic actions, but the results were highly inconsistent depending on minor factors like body size or leg spacing. When knees were added, the training failed to converge entirely. 
