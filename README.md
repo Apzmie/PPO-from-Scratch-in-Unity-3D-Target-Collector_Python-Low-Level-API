@@ -25,3 +25,4 @@ The TD error ($\delta$) evaluates whether the action taken in the current state 
 The objective function has to be maximized to properly adjust action probabilities, and entropy has to be maximized to encourage exploration. However, PyTorch's autograd is designed to minimize the loss when calculating gradients. The solution is to apply a negative sign to maximize them. Value loss is multiplied by a coefficient of 0.5 to prioritize policy loss, and entropy loss is multiplied by a coefficient like 0.001 to allow for small exploration.
 
 ### Iterative Update
+Once all transitions are collected, the parameters are updated using mini-batches to adjust the gradient direction little by little, with multiple epochs to maximize learning from a limited amount of data. This iterative update does not change the policy dramatically due to clipping mechanism.
